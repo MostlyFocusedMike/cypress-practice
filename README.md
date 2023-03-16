@@ -17,4 +17,8 @@ cy.get('.todoapp').toMatchImageSnapshot({
   })
 ```
 
-That `threshold` property will help
+That `threshold` property will help. We can control things like viewport, and then expect them to match the snapshots, eg make sure that flex/grid items are correct.
+https://css-tricks.com/an-intro-to-web-app-testing-with-cypress-io/ talks about how easy it is to test responsive designs, I just need to double check mixing that with snapshots.
+
+## Module support
+It supports es modules out of the gate. Makes sense since it's just rendering things with chrome and then checking on them.
